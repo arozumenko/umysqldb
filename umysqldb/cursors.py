@@ -84,10 +84,6 @@ class Cursor(pymysql.cursors.Cursor):
         self._has_next = 0
         return self.rowcount
         
-        
-class BaseCursor(Cursor):
-    pass
-
 
 class DictCursor(Cursor):
 
