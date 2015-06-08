@@ -85,7 +85,8 @@ class Cursor(pymysql.cursors.Cursor):
         return self.rowcount
         
         
-BaseCursor = Cursor
+class BaseCursor(Cursor):
+    pass
 
 
 class DictCursor(Cursor):
